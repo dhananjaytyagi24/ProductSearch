@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Variable overrides
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.nav-tabs {
+    .nav-link {
+        color: black;
+        padding: 0.5rem 0.35rem;
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      color: white;
+      background-color: $gray-800;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+// Angular Material
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
